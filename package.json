@@ -1,0 +1,24 @@
+{
+  "name": "optimizelyfeaturetoggle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daprieto1/OptimizelyFeatureToggle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daprieto1/OptimizelyFeatureToggle/issues"
+  },
+  "homepage": "https://github.com/daprieto1/OptimizelyFeatureToggle#readme",
+  "dependencies": {
+    "@hapi/hapi": "20.1.2",
+    "@optimizely/optimizely-sdk": "4.5.1",
+    "custom-env": "2.0.1"
+  }
+}
