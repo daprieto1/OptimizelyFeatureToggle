@@ -2,9 +2,13 @@
 
 const Features = require('../lib/modules/features');
 const Services = require('../lib/services');
+const Clients = require('../lib/clients');
 
 module.exports = async () => {
 
+    const clientsOptions = {optimizely: {}};
+
+    const clients = await Clients(clientsOptions);
     const services = Services();
 
     const manifest = {
@@ -17,7 +21,7 @@ module.exports = async () => {
         },
         plugins: [
             {
-                plugin: Features(services),
+                plugin: Features(services, clients),
                 options: {}
             }
         ]
